@@ -3,7 +3,7 @@
   "scenarioId" : "GI180010002",
   "scriptObjectList" : [ {
     "scriptId" : "GI180010002-001",
-    "description" : "Exchange Group",
+    "description" : "Exchange1 Group",
     "scriptStatus" : "ACTIVE",
     "scriptSource" : "MFGINGKM",
     "procedureCall" : "",
