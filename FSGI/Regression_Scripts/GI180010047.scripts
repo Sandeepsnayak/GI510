@@ -1,0 +1,3650 @@
+{
+  "rootDirectory" : "",
+  "scenarioId" : "GI180010047",
+  "scriptObjectList" : [ {
+    "scriptId" : "GI180010047-001",
+    "description" : "Exchange Group",
+    "scriptStatus" : "ACTIVE",
+    "scriptSource" : "Core",
+    "procedureCall" : "",
+    "baseRelease" : "5.1",
+    "productGroup" : "DEALING",
+    "productCode" : "GI",
+    "application" : "CMESS",
+    "operation" : "CREATE",
+    "sequence" : "001",
+    "tableDefinitionList" : [ {
+      "tableName" : "CMESS",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "Table",
+        "fieldValue" : "GRP_CHANGE",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Elem.",
+        "fieldValue" : "G1A",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Lang.",
+        "fieldValue" : "2",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Description",
+        "fieldValue" : "Exchange Group",
+        "fieldInput" : "YES"
+      } ]
+    } ],
+    "dynamicFieldsCaptureList" : [ {
+      "tableName" : "CMESS",
+      "dynamicColumnsList" : [ {
+        "columnName" : "Elem."
+      } ]
+    } ],
+    "generateError" : "",
+    "defineError" : "",
+    "dependentScript" : "NONE",
+    "createdBy" : "Anand Raj",
+    "approvedBy" : "",
+    "createdDate" : "",
+    "lastModifiedDate" : ""
+  }, {
+    "scriptId" : "GI180010047-002",
+    "description" : "Exchange Group Method",
+    "scriptStatus" : "ACTIVE",
+    "scriptSource" : "Core",
+    "procedureCall" : "",
+    "baseRelease" : "5.1",
+    "productGroup" : "DEALING",
+    "productCode" : "GI",
+    "application" : "EXCHANGE GROUP",
+    "operation" : "CREATE",
+    "sequence" : "002",
+    "tableDefinitionList" : [ {
+      "tableName" : "OPERATION",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "Operation",
+        "fieldValue" : "INS",
+        "fieldInput" : "YES"
+      } ]
+    }, {
+      "tableName" : "EXCHANGE GROUP",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "Exchange group",
+        "fieldValue" : "G1A",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Trading desk method",
+        "fieldValue" : "0004",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Forex by order(client)",
+        "fieldValue" : "Y",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Forecast report",
+        "fieldValue" : "Y",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Provisional client TD",
+        "fieldValue" : "N",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Backup report",
+        "fieldValue" : "N",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "CTV report",
+        "fieldValue" : "N",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Adv. final client tdsk.",
+        "fieldValue" : "N",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Addl. FX details at client tdsk.",
+        "fieldValue" : "N",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "WEM pricing",
+        "fieldValue" : "N",
+        "fieldInput" : "YES"
+      } ]
+    } ],
+    "dynamicFieldsCaptureList" : [ ],
+    "generateError" : "",
+    "defineError" : "",
+    "dependentScript" : "NONE",
+    "createdBy" : "Anand Raj",
+    "approvedBy" : "",
+    "createdDate" : "",
+    "lastModifiedDate" : ""
+  }, {
+    "scriptId" : "GI180010047-003",
+    "description" : "Collection Group Account",
+    "scriptStatus" : "ACTIVE",
+    "scriptSource" : "Core",
+    "procedureCall" : "",
+    "baseRelease" : "5.1",
+    "productGroup" : "DEALING",
+    "productCode" : "GI",
+    "application" : "CMESS",
+    "operation" : "CREATE",
+    "sequence" : "003",
+    "tableDefinitionList" : [ {
+      "tableName" : "CMESS",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "Table",
+        "fieldValue" : "COLACGP",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Elem.",
+        "fieldValue" : "G1A",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Lang.",
+        "fieldValue" : "2",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Description",
+        "fieldValue" : "Collection Group Account",
+        "fieldInput" : "YES"
+      } ]
+    } ],
+    "dynamicFieldsCaptureList" : [ {
+      "tableName" : "CMESS",
+      "dynamicColumnsList" : [ {
+        "columnName" : "Elem."
+      } ]
+    } ],
+    "generateError" : "",
+    "defineError" : "",
+    "dependentScript" : "NONE",
+    "createdBy" : "Anand Raj",
+    "approvedBy" : "",
+    "createdDate" : "",
+    "lastModifiedDate" : ""
+  }, {
+    "scriptId" : "GI180010047-004",
+    "description" : "Commission Group",
+    "scriptStatus" : "ACTIVE",
+    "scriptSource" : "Core",
+    "procedureCall" : "",
+    "baseRelease" : "5.1",
+    "productGroup" : "DEALING",
+    "productCode" : "GI",
+    "application" : "CMESS",
+    "operation" : "CREATE",
+    "sequence" : "004",
+    "tableDefinitionList" : [ {
+      "tableName" : "CMESS",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "Table",
+        "fieldValue" : "TA_CGROUP",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Elem.",
+        "fieldValue" : "G1A",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Lang.",
+        "fieldValue" : "2",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Description",
+        "fieldValue" : "Commission Group",
+        "fieldInput" : "YES"
+      } ]
+    } ],
+    "dynamicFieldsCaptureList" : [ {
+      "tableName" : "CMESS",
+      "dynamicColumnsList" : [ {
+        "columnName" : "Elem."
+      } ]
+    } ],
+    "generateError" : "",
+    "defineError" : "",
+    "dependentScript" : "NONE",
+    "createdBy" : "Anand Raj",
+    "approvedBy" : "",
+    "createdDate" : "",
+    "lastModifiedDate" : ""
+  }, {
+    "scriptId" : "GI180010047-005",
+    "description" : "Exchange Rate Load ",
+    "scriptStatus" : "ACTIVE",
+    "scriptSource" : "Core",
+    "procedureCall" : "",
+    "baseRelease" : "5.1",
+    "productGroup" : "DEALING",
+    "productCode" : "GI",
+    "application" : "CCY. BY EXCH. GROUP UPDATE",
+    "operation" : "CREATE",
+    "sequence" : "005",
+    "tableDefinitionList" : [ {
+      "tableName" : "CCY. BY EXCH. GROUP UPDATE",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "Processing date",
+        "fieldValue" : "01-Jan-2010",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Group",
+        "fieldValue" : "~LINKGI180010047-001#CELEM",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Value date",
+        "fieldValue" : "01-Jan-2010",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Ref ccy.",
+        "fieldValue" : "USD",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Ccy.",
+        "fieldValue" : "EUR",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Exch. Rate date",
+        "fieldValue" : "01-Jan-2010",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Exchange rate",
+        "fieldValue" : "1",
+        "fieldInput" : "YES"
+      } ]
+    } ],
+    "dynamicFieldsCaptureList" : [ ],
+    "generateError" : "",
+    "defineError" : "",
+    "dependentScript" : "NONE",
+    "createdBy" : "Anand Raj",
+    "approvedBy" : "",
+    "createdDate" : "",
+    "lastModifiedDate" : ""
+  }, {
+    "scriptId" : "GI180010047-006",
+    "description" : "Security ID Creation",
+    "scriptStatus" : "ACTIVE",
+    "scriptSource" : "Core",
+    "procedureCall" : "",
+    "baseRelease" : "5.1",
+    "productGroup" : "DEALING",
+    "productCode" : "GI",
+    "application" : "MF FUND",
+    "operation" : "CREATE",
+    "sequence" : "006",
+    "tableDefinitionList" : [ {
+      "tableName" : "SECURITY LIST",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "Name",
+        "fieldValue" : "SEC_ID_SSGI180010047 ",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "ISIN code",
+        "fieldValue" : "LU",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "isinCodeSequence",
+        "fieldValue" : "G1A01052",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Type",
+        "fieldValue" : "000",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Branch",
+        "fieldValue" : "000",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Ccy.",
+        "fieldValue" : "EUR",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Country",
+        "fieldValue" : "LU",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Calc. type",
+        "fieldValue" : "00",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Depositary",
+        "fieldValue" : "1",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Fees code",
+        "fieldValue" : "0",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Quotation place",
+        "fieldValue" : "000",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Local type",
+        "fieldValue" : "000",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Interest calc.",
+        "fieldValue" : "1",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Income type",
+        "fieldValue" : "0",
+        "fieldInput" : "YES"
+      } ]
+    } ],
+    "dynamicFieldsCaptureList" : [ {
+      "tableName" : "SECURITY LIST",
+      "dynamicColumnsList" : [ {
+        "columnName" : "Security ID"
+      } ]
+    } ],
+    "generateError" : "",
+    "defineError" : "",
+    "dependentScript" : "NONE",
+    "createdBy" : "Anand Raj",
+    "approvedBy" : "",
+    "createdDate" : "",
+    "lastModifiedDate" : ""
+  }, {
+    "scriptId" : "GI180010047-007",
+    "description" : "SECURITY ID 2",
+    "scriptStatus" : "ACTIVE",
+    "scriptSource" : "Core",
+    "procedureCall" : "",
+    "baseRelease" : "5.1",
+    "productGroup" : "DEALING",
+    "productCode" : "GI",
+    "application" : "MF FUND",
+    "operation" : "CREATE",
+    "sequence" : "007",
+    "tableDefinitionList" : [ {
+      "tableName" : "SECURITY LIST",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "Name",
+        "fieldValue" : "SEC_ID_SSGI180010047 ",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Type",
+        "fieldValue" : "000",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Branch",
+        "fieldValue" : "000",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Ccy.",
+        "fieldValue" : "EUR",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Country",
+        "fieldValue" : "LU",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Income type",
+        "fieldValue" : "0",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Calc. type",
+        "fieldValue" : "00",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Depositary",
+        "fieldValue" : "1",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Fees code",
+        "fieldValue" : "0",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Quotation place",
+        "fieldValue" : "000",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Local type",
+        "fieldValue" : "000",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Interest calc.",
+        "fieldValue" : "1",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "isinCodeSequence",
+        "fieldValue" : "G1A01053",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "ISIN code",
+        "fieldValue" : "LU",
+        "fieldInput" : "YES"
+      } ]
+    } ],
+    "dynamicFieldsCaptureList" : [ {
+      "tableName" : "SECURITY LIST",
+      "dynamicColumnsList" : [ {
+        "columnName" : "Security ID"
+      } ]
+    } ],
+    "generateError" : "",
+    "defineError" : "",
+    "dependentScript" : "NONE",
+    "createdBy" : "",
+    "approvedBy" : "",
+    "createdDate" : "",
+    "lastModifiedDate" : ""
+  }, {
+    "scriptId" : "GI180010047-008",
+    "description" : "MF Fund",
+    "scriptStatus" : "ACTIVE",
+    "scriptSource" : "Core",
+    "procedureCall" : "",
+    "baseRelease" : "5.1",
+    "productGroup" : "DEALING",
+    "productCode" : "GI",
+    "application" : "MF FUND",
+    "operation" : "CREATE",
+    "sequence" : "008",
+    "tableDefinitionList" : [ {
+      "tableName" : "MF FUND",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "Fund ID",
+        "fieldValue" : "G1AMFF",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Name",
+        "fieldValue" : "MF Fund_SSGI180010047 ",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Fund type",
+        "fieldValue" : "1",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Domicile",
+        "fieldValue" : "LU",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Reference ccy.",
+        "fieldValue" : "EUR",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Nationality",
+        "fieldValue" : "LU",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Management type",
+        "fieldValue" : "A",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Accounting chart",
+        "fieldValue" : "01",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Valuation method",
+        "fieldValue" : "C",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Settlement method",
+        "fieldValue" : "0",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Accounting method",
+        "fieldValue" : "0001",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Depositary bank",
+        "fieldValue" : "1",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Valuation model",
+        "fieldValue" : "000",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Reporting language",
+        "fieldValue" : "2",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Created",
+        "fieldValue" : "01-Jan-2018",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "fiscalYearStartDate",
+        "fieldValue" : "01-Jan-2015",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "fiscalYearEndDate",
+        "fieldValue" : "01-Jan-2020",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "typeOfStatistics",
+        "fieldValue" : "B",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "exchangeRateGroup",
+        "fieldValue" : "~LINKGI180010047-001#CELEM",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "exchangeRateGroupTA",
+        "fieldValue" : "~LINKGI180010047-001#CELEM",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "exchangeGroup",
+        "fieldValue" : "~LINKGI180010047-001#CELEM",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "initialDate",
+        "fieldValue" : "01-Jan-2015",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "frequencyCode",
+        "fieldValue" : "0010",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "cutOffTime",
+        "fieldValue" : "01-Jan-2015 16:10:10",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "holidayCountryCode",
+        "fieldValue" : "LU",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "applicationCounty",
+        "fieldValue" : "LU",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "cutOffWorkingDaysFlag",
+        "fieldValue" : "Y",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "performanceFeeCode",
+        "fieldValue" : "00",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "FX adjustment",
+        "fieldValue" : "N",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "multiclassCode",
+        "fieldValue" : "0",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "delayDays",
+        "fieldValue" : "0",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Sav. directive",
+        "fieldValue" : "0001",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Exempt status review date",
+        "fieldValue" : "01-Jan-2015",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "GL flow ID",
+        "fieldValue" : "N/A",
+        "fieldInput" : "YES"
+      } ]
+    }, {
+      "tableName" : "SHARE VALUES",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "FundId",
+        "fieldValue" : "G1AMFF",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Share",
+        "fieldValue" : "A",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Coupon",
+        "fieldValue" : "D",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Security ID",
+        "fieldValue" : "~LINKGI180010047-006#NOVAL",
+        "fieldInput" : "YES"
+      } ]
+    }, {
+      "tableName" : "FUND MANAGER",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "Fund Id",
+        "fieldValue" : "G1AMFF",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Manager",
+        "fieldValue" : "1",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "updateCode",
+        "fieldValue" : "N",
+        "fieldInput" : "YES"
+      } ]
+    } ],
+    "dynamicFieldsCaptureList" : [ {
+      "tableName" : "MF FUND",
+      "dynamicColumnsList" : [ {
+        "columnName" : "Fund ID"
+      } ]
+    } ],
+    "generateError" : "",
+    "defineError" : "",
+    "dependentScript" : "NONE",
+    "createdBy" : "Anand Raj",
+    "approvedBy" : "",
+    "createdDate" : "",
+    "lastModifiedDate" : ""
+  }, {
+    "scriptId" : "GI180010047-009",
+    "description" : "MF FUND 2",
+    "scriptStatus" : "ACTIVE",
+    "scriptSource" : "Core",
+    "procedureCall" : "",
+    "baseRelease" : "5.1",
+    "productGroup" : "DEALING",
+    "productCode" : "GI",
+    "application" : "MF FUND",
+    "operation" : "CREATE",
+    "sequence" : "009",
+    "tableDefinitionList" : [ {
+      "tableName" : "MF FUND",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "Fund ID",
+        "fieldValue" : "G1AMF1",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Name",
+        "fieldValue" : "MF Fund_SSGI180010047",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Fund type",
+        "fieldValue" : "1",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Domicile",
+        "fieldValue" : "LU",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Nationality",
+        "fieldValue" : "LU",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Reference ccy.",
+        "fieldValue" : "EUR",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Management type",
+        "fieldValue" : "A",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Accounting chart",
+        "fieldValue" : "01",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Valuation method",
+        "fieldValue" : "C",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Settlement method",
+        "fieldValue" : "0",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Accounting method",
+        "fieldValue" : "0001",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Depositary bank",
+        "fieldValue" : "1",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Valuation model",
+        "fieldValue" : "000",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "FX adjustment",
+        "fieldValue" : "N",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Reporting language",
+        "fieldValue" : "2",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Sav. directive",
+        "fieldValue" : "0000",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Created",
+        "fieldValue" : "01-Jan-2018",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "fiscalYearStartDate",
+        "fieldValue" : "01-Jan-2018",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "fiscalYearEndDate",
+        "fieldValue" : "01-Jan-2020",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "exchangeRateGroup",
+        "fieldValue" : "~LINKGI180010047-001#CELEM",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "exchangeRateGroupTA",
+        "fieldValue" : "~LINKGI180010047-001#CELEM",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "exchangeGroup",
+        "fieldValue" : "~LINKGI180010047-001#CELEM",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "typeOfStatistics",
+        "fieldValue" : "B",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "multiclassCode",
+        "fieldValue" : "0",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "initialDate",
+        "fieldValue" : "01-Jan-2015",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "frequencyCode",
+        "fieldValue" : "0010",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "cutOffTime",
+        "fieldValue" : "01-Jan-2015 20:10:10",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "holidayCountryCode",
+        "fieldValue" : "LU",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "delayDays",
+        "fieldValue" : "0",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Exempt status review date",
+        "fieldValue" : "01-Jan-2015",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "ADL type",
+        "fieldValue" : "0000",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "performanceFeeCode",
+        "fieldValue" : "00",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "GL flow ID",
+        "fieldValue" : "N/A",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "CRS status",
+        "fieldValue" : "0000",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Jurisdiction",
+        "fieldValue" : "LU",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "cutOffWorkingDaysFlag",
+        "fieldValue" : "Y",
+        "fieldInput" : "YES"
+      } ]
+    }, {
+      "tableName" : "SHARE VALUES",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "Share",
+        "fieldValue" : "A",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Coupon",
+        "fieldValue" : "D",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Security ID",
+        "fieldValue" : "~LINKGI180010047-007#NOVAL",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "FundId",
+        "fieldValue" : "G1AMF1",
+        "fieldInput" : "YES"
+      } ]
+    }, {
+      "tableName" : "FUND MANAGER",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "Fund Id",
+        "fieldValue" : "G1AMF1",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Manager",
+        "fieldValue" : "1",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "updateCode",
+        "fieldValue" : "N",
+        "fieldInput" : "YES"
+      } ]
+    } ],
+    "dynamicFieldsCaptureList" : [ {
+      "tableName" : "MF FUND",
+      "dynamicColumnsList" : [ {
+        "columnName" : "Fund ID"
+      } ]
+    } ],
+    "generateError" : "",
+    "defineError" : "",
+    "dependentScript" : "NONE",
+    "createdBy" : "Anand Raj",
+    "approvedBy" : "",
+    "createdDate" : "",
+    "lastModifiedDate" : ""
+  }, {
+    "scriptId" : "GI180010047-012",
+    "description" : "Fund Promoter",
+    "scriptStatus" : "ACTIVE",
+    "scriptSource" : "Core",
+    "procedureCall" : "",
+    "baseRelease" : "5.1",
+    "productGroup" : "DEALING",
+    "productCode" : "GI",
+    "application" : "FUNDPROMOTER",
+    "operation" : "CREATE",
+    "sequence" : "012",
+    "tableDefinitionList" : [ {
+      "tableName" : "FUNDPROMOTER",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "External ref",
+        "fieldValue" : "G1AFPRXI01",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Name",
+        "fieldValue" : "Promoter_SSGI180010047 ",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Language",
+        "fieldValue" : "2",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Zip code",
+        "fieldValue" : ".",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Country",
+        "fieldValue" : "LU",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Bank name",
+        "fieldValue" : "1",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Account no.",
+        "fieldValue" : "435464654",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "TD for switch",
+        "fieldValue" : "0005",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Right type ID",
+        "fieldValue" : "ALL",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Cash flow ID",
+        "fieldValue" : "NGK",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "paymentProcess",
+        "fieldValue" : "02",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "GL flow ID",
+        "fieldValue" : "N/A",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Settlement date",
+        "fieldValue" : "01",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Transfer agent",
+        "fieldValue" : "0001",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "CRS status",
+        "fieldValue" : "0001",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Jurisdiction",
+        "fieldValue" : "LU",
+        "fieldInput" : "YES"
+      } ]
+    }, {
+      "tableName" : "ACCOUNTS",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "Currency",
+        "fieldValue" : "EUR",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "External Bene. bank",
+        "fieldValue" : "1",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Bene. account number",
+        "fieldValue" : "324365465",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Bene. account name",
+        "fieldValue" : "Anand Raj",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Acc. type",
+        "fieldValue" : "0000",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Charges",
+        "fieldValue" : "N",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Type",
+        "fieldValue" : "103",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Swift Pay. Bank",
+        "fieldValue" : "Y",
+        "fieldInput" : "YES"
+      } ]
+    }, {
+      "tableName" : "ACCOUNTS",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "Currency",
+        "fieldValue" : "USD",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "External Bene. bank",
+        "fieldValue" : "1",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Bene. account number",
+        "fieldValue" : "454354G1A",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Bene. account name",
+        "fieldValue" : "4353543",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Acc. type",
+        "fieldValue" : "0000",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Charges",
+        "fieldValue" : "N",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Type",
+        "fieldValue" : "103",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Swift Pay. Bank",
+        "fieldValue" : "Y",
+        "fieldInput" : "YES"
+      } ]
+    } ],
+    "dynamicFieldsCaptureList" : [ {
+      "tableName" : "FUNDPROMOTER",
+      "dynamicColumnsList" : [ {
+        "columnName" : "Fund promoter ID"
+      } ]
+    } ],
+    "generateError" : "",
+    "defineError" : "",
+    "dependentScript" : "NONE",
+    "createdBy" : "Anand Raj",
+    "approvedBy" : "",
+    "createdDate" : "",
+    "lastModifiedDate" : ""
+  }, {
+    "scriptId" : "GI180010047-013",
+    "description" : "TFC ",
+    "scriptStatus" : "ACTIVE",
+    "scriptSource" : "Core",
+    "procedureCall" : "",
+    "baseRelease" : "5.1",
+    "productGroup" : "DEALING",
+    "productCode" : "GI",
+    "application" : "TFC",
+    "operation" : "CREATE",
+    "sequence" : "013",
+    "tableDefinitionList" : [ {
+      "tableName" : "TFC",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "External TFC ref.",
+        "fieldValue" : "G1ARFCXN01",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Name",
+        "fieldValue" : "TFC_SSGI180010047 ",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Language",
+        "fieldValue" : "2",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Zip code",
+        "fieldValue" : ".",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Country",
+        "fieldValue" : "LU",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Bank name",
+        "fieldValue" : "1",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Account no.",
+        "fieldValue" : "764864",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "TD/VD for switch",
+        "fieldValue" : "0007",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Right type ID",
+        "fieldValue" : "ALL",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Cash flow ID",
+        "fieldValue" : "NGK",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "CRS Status",
+        "fieldValue" : "0001",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Jurisdiction",
+        "fieldValue" : "LU",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Transfer agent",
+        "fieldValue" : "0001",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Settlement date",
+        "fieldValue" : "01",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Fund promoter ID",
+        "fieldValue" : "~LINKGI180010047-012#NPROMOTER",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Collection account group",
+        "fieldValue" : "~LINKGI180010047-003#CELEM",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "FX reversal",
+        "fieldValue" : "Y",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "FX exporting",
+        "fieldValue" : "Y",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Agent order override",
+        "fieldValue" : "Y",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Account opening notice",
+        "fieldValue" : "Y",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "GL flow ID",
+        "fieldValue" : "N/A",
+        "fieldInput" : "NO"
+      } ]
+    }, {
+      "tableName" : "ACCOUNTS",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "Currency",
+        "fieldValue" : "EUR",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "External Bene. bank",
+        "fieldValue" : "1",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Bene. account number",
+        "fieldValue" : "G1AX0345345",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Bene. account name",
+        "fieldValue" : "NarayanG",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Acc. type",
+        "fieldValue" : "0000",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Charges",
+        "fieldValue" : "N",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Type",
+        "fieldValue" : "103",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Swift Pay. Bank",
+        "fieldValue" : "Y",
+        "fieldInput" : "YES"
+      } ]
+    }, {
+      "tableName" : "ACCOUNTS",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "Currency",
+        "fieldValue" : "USD",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "External Bene. bank",
+        "fieldValue" : "1",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Bene. account number",
+        "fieldValue" : "G1AX0345345",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Bene. account name",
+        "fieldValue" : "NarayanG",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Acc. type",
+        "fieldValue" : "0000",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Charges",
+        "fieldValue" : "N",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Type",
+        "fieldValue" : "103",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Swift Pay. Bank",
+        "fieldValue" : "Y",
+        "fieldInput" : "YES"
+      } ]
+    } ],
+    "dynamicFieldsCaptureList" : [ {
+      "tableName" : "TFC",
+      "dynamicColumnsList" : [ {
+        "columnName" : "TFC ID"
+      } ]
+    } ],
+    "generateError" : "",
+    "defineError" : "",
+    "dependentScript" : "NONE",
+    "createdBy" : "Anand Raj",
+    "approvedBy" : "",
+    "createdDate" : "",
+    "lastModifiedDate" : ""
+  }, {
+    "scriptId" : "GI180010047-014",
+    "description" : "TA Fund",
+    "scriptStatus" : "ACTIVE",
+    "scriptSource" : "Core",
+    "procedureCall" : "",
+    "baseRelease" : "5.1",
+    "productGroup" : "DEALING",
+    "productCode" : "GI",
+    "application" : "TA FUND",
+    "operation" : "CREATE",
+    "sequence" : "014",
+    "tableDefinitionList" : [ {
+      "tableName" : "TA FUND",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "Fund ID",
+        "fieldValue" : "G1ATAF",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Name",
+        "fieldValue" : "TA Fund_SSGI180010047 ",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Fund type",
+        "fieldValue" : "0001",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "MF ID",
+        "fieldValue" : "G1AMFF",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Share price decimals",
+        "fieldValue" : "4",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Quot. ccy.",
+        "fieldValue" : "EUR",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Subscription price",
+        "fieldValue" : "10",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Quantity decimals",
+        "fieldValue" : "5",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Qty. rounding type",
+        "fieldValue" : "0002",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Commission code",
+        "fieldValue" : "N",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "TFC ID",
+        "fieldValue" : "~LINKGI180010047-013#NTFC",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "First subs. date",
+        "fieldValue" : "01-Jan-2015",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Last subscription date",
+        "fieldValue" : "05-Jan-2015",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Security category",
+        "fieldValue" : "0001",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "GL flow ID",
+        "fieldValue" : "N/A",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Type use",
+        "fieldValue" : "1",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Cash flow ID",
+        "fieldValue" : "NGK",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Collection account group",
+        "fieldValue" : "~LINKGI180010047-003#CELEM",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Group type",
+        "fieldValue" : "~LINKGI180010047-004#CELEM",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Ind.Equ.rate.receipt",
+        "fieldValue" : "0001",
+        "fieldInput" : "YES"
+      } ]
+    } ],
+    "dynamicFieldsCaptureList" : [ {
+      "tableName" : "TA FUND",
+      "dynamicColumnsList" : [ {
+        "columnName" : "Fund ID"
+      } ]
+    } ],
+    "generateError" : "",
+    "defineError" : "",
+    "dependentScript" : "NONE",
+    "createdBy" : "Anand Raj",
+    "approvedBy" : "",
+    "createdDate" : "",
+    "lastModifiedDate" : ""
+  }, {
+    "scriptId" : "GI180010047-015",
+    "description" : " TA FUND 2",
+    "scriptStatus" : "ACTIVE",
+    "scriptSource" : "Core",
+    "procedureCall" : "",
+    "baseRelease" : "5.1",
+    "productGroup" : "DEALING",
+    "productCode" : "GI",
+    "application" : "TA FUND",
+    "operation" : "CREATE",
+    "sequence" : "015",
+    "tableDefinitionList" : [ {
+      "tableName" : "TA FUND",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "Fund ID",
+        "fieldValue" : "G1ATA1",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Name",
+        "fieldValue" : "TA Fund_SSGI180010047",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Fund type",
+        "fieldValue" : "0001",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "MF ID",
+        "fieldValue" : "G1AMF1",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Share price decimals",
+        "fieldValue" : "4",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Quot. ccy.",
+        "fieldValue" : "EUR",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Subscription price",
+        "fieldValue" : "10",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Quantity decimals",
+        "fieldValue" : "5",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Qty. rounding type",
+        "fieldValue" : "0002",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Commission code",
+        "fieldValue" : "N",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "TFC ID",
+        "fieldValue" : "~LINKGI180010047-013#NTFC",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "First subs. date",
+        "fieldValue" : "01-Jan-2015",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Last subscription date",
+        "fieldValue" : "05-Jan-2015",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Security category",
+        "fieldValue" : "0001",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "GL flow ID",
+        "fieldValue" : "N/A",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Cash flow ID",
+        "fieldValue" : "NGK",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Type use",
+        "fieldValue" : "1",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Collection account group",
+        "fieldValue" : "~LINKGI180010047-003#CELEM",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Group type",
+        "fieldValue" : "~LINKGI180010047-004#CELEM",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Ind.Equ.rate.receipt",
+        "fieldValue" : "0001",
+        "fieldInput" : "YES"
+      } ]
+    } ],
+    "dynamicFieldsCaptureList" : [ {
+      "tableName" : "TA FUND",
+      "dynamicColumnsList" : [ {
+        "columnName" : "Fund ID"
+      } ]
+    } ],
+    "generateError" : "",
+    "defineError" : "",
+    "dependentScript" : "NONE",
+    "createdBy" : "Anand Raj",
+    "approvedBy" : "",
+    "createdDate" : "",
+    "lastModifiedDate" : ""
+  }, {
+    "scriptId" : "GI180010047-016",
+    "description" : "Share Class",
+    "scriptStatus" : "ACTIVE",
+    "scriptSource" : "Core",
+    "procedureCall" : "",
+    "baseRelease" : "5.1",
+    "productGroup" : "DEALING",
+    "productCode" : "GI",
+    "application" : "TA FUND",
+    "operation" : "CREATE",
+    "sequence" : "016",
+    "tableDefinitionList" : [ {
+      "tableName" : "SHARE CLASS",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "Fund ID",
+        "fieldValue" : "G1ATAF",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Share class",
+        "fieldValue" : "A",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Type of dividend",
+        "fieldValue" : "D",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Distribution type",
+        "fieldValue" : "0000",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "GL flow ID",
+        "fieldValue" : "N/A",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "MIFID Control",
+        "fieldValue" : "0000",
+        "fieldInput" : "YES"
+      } ]
+    } ],
+    "dynamicFieldsCaptureList" : [ {
+      "tableName" : "SHARE CLASS",
+      "dynamicColumnsList" : [ {
+        "columnName" : "Fund ID"
+      } ]
+    } ],
+    "generateError" : "",
+    "defineError" : "",
+    "dependentScript" : "NONE",
+    "createdBy" : "Anand Raj",
+    "approvedBy" : "",
+    "createdDate" : "",
+    "lastModifiedDate" : ""
+  }, {
+    "scriptId" : "GI180010047-017",
+    "description" : "Share Class 2",
+    "scriptStatus" : "ACTIVE",
+    "scriptSource" : "Core",
+    "procedureCall" : "",
+    "baseRelease" : "5.1",
+    "productGroup" : "DEALING",
+    "productCode" : "GI",
+    "application" : "TA FUND",
+    "operation" : "CREATE",
+    "sequence" : "017",
+    "tableDefinitionList" : [ {
+      "tableName" : "SHARE CLASS",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "Fund ID",
+        "fieldValue" : "G1ATA1",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Share class",
+        "fieldValue" : "A",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Type of dividend",
+        "fieldValue" : "D",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Distribution type",
+        "fieldValue" : "0000",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "MIFID Control",
+        "fieldValue" : "0000",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "GL flow ID",
+        "fieldValue" : "N/A",
+        "fieldInput" : "YES"
+      } ]
+    } ],
+    "dynamicFieldsCaptureList" : [ ],
+    "generateError" : "",
+    "defineError" : "",
+    "dependentScript" : "NONE",
+    "createdBy" : "Anand Raj",
+    "approvedBy" : "",
+    "createdDate" : "",
+    "lastModifiedDate" : ""
+  }, {
+    "scriptId" : "GI180010047-018",
+    "description" : "Group Commission - SUB",
+    "scriptStatus" : "ACTIVE",
+    "scriptSource" : "Core",
+    "procedureCall" : "",
+    "baseRelease" : "5.1",
+    "productGroup" : "DEALING",
+    "productCode" : "GI",
+    "application" : "COMISSION",
+    "operation" : "CREATE",
+    "sequence" : "018",
+    "tableDefinitionList" : [ {
+      "tableName" : "GROUP COMISSION DETAILS",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "Share class",
+        "fieldValue" : "A",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Group",
+        "fieldValue" : "G1A",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Operation code",
+        "fieldValue" : "0001",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Condition method",
+        "fieldValue" : "0000",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Commission type",
+        "fieldValue" : "0007",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Method",
+        "fieldValue" : "F",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Commission",
+        "fieldValue" : "Y",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Min. %",
+        "fieldValue" : "2",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Max. %",
+        "fieldValue" : "20",
+        "fieldInput" : "YES"
+      } ]
+    } ],
+    "dynamicFieldsCaptureList" : [ ],
+    "generateError" : "",
+    "defineError" : "",
+    "dependentScript" : "NONE",
+    "createdBy" : "Anand Raj",
+    "approvedBy" : "",
+    "createdDate" : "",
+    "lastModifiedDate" : ""
+  }, {
+    "scriptId" : "GI180010047-019",
+    "description" : "GROUP COMMISSION - Switch out",
+    "scriptStatus" : "ACTIVE",
+    "scriptSource" : "Core",
+    "procedureCall" : "",
+    "baseRelease" : "5.1",
+    "productGroup" : "DEALING",
+    "productCode" : "GI",
+    "application" : "COMISSION",
+    "operation" : "CREATE",
+    "sequence" : "019",
+    "tableDefinitionList" : [ {
+      "tableName" : "GROUP COMISSION DETAILS",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "Share class",
+        "fieldValue" : "A",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Group",
+        "fieldValue" : "G1A",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Operation code",
+        "fieldValue" : "0003",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Condition method",
+        "fieldValue" : "0006",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Commission",
+        "fieldValue" : "Y",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Method",
+        "fieldValue" : "F",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Min. %",
+        "fieldValue" : "2",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Max. %",
+        "fieldValue" : "20",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Penalty type",
+        "fieldValue" : "0007",
+        "fieldInput" : "YES"
+      } ]
+    } ],
+    "dynamicFieldsCaptureList" : [ ],
+    "generateError" : "",
+    "defineError" : "",
+    "dependentScript" : "NONE",
+    "createdBy" : "Anand Raj",
+    "approvedBy" : "",
+    "createdDate" : "",
+    "lastModifiedDate" : ""
+  }, {
+    "scriptId" : "GI180010047-020",
+    "description" : "Group Commission - Switch IN",
+    "scriptStatus" : "ACTIVE",
+    "scriptSource" : "Core",
+    "procedureCall" : "",
+    "baseRelease" : "5.1",
+    "productGroup" : "DEALING",
+    "productCode" : "GI",
+    "application" : "COMISSION",
+    "operation" : "CREATE",
+    "sequence" : "020",
+    "tableDefinitionList" : [ {
+      "tableName" : "GROUP COMISSION DETAILS",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "Share class",
+        "fieldValue" : "A",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Group",
+        "fieldValue" : "G1A",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Operation code",
+        "fieldValue" : "0004",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Condition method",
+        "fieldValue" : "0006",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Method",
+        "fieldValue" : "F",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Commission type",
+        "fieldValue" : "0007",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Min. %",
+        "fieldValue" : "2",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Max. %",
+        "fieldValue" : "20",
+        "fieldInput" : "YES"
+      } ]
+    } ],
+    "dynamicFieldsCaptureList" : [ ],
+    "generateError" : "",
+    "defineError" : "",
+    "dependentScript" : "NONE",
+    "createdBy" : "Anand Raj",
+    "approvedBy" : "",
+    "createdDate" : "",
+    "lastModifiedDate" : ""
+  }, {
+    "scriptId" : "GI180010047-021",
+    "description" : "Commission Structure - SUB",
+    "scriptStatus" : "ACTIVE",
+    "scriptSource" : "Core",
+    "procedureCall" : "",
+    "baseRelease" : "5.1",
+    "productGroup" : "DEALING",
+    "productCode" : "GI",
+    "application" : "COMISSION",
+    "operation" : "CREATE",
+    "sequence" : "021",
+    "tableDefinitionList" : [ {
+      "tableName" : "AGENT STRUCTURE",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "Structure ID",
+        "fieldValue" : "G1A",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Structure Name",
+        "fieldValue" : "Structure_SSGI180010047 ",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Structure type",
+        "fieldValue" : "0001",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Commission type",
+        "fieldValue" : "0001",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Percentage",
+        "fieldValue" : "10",
+        "fieldInput" : "YES"
+      } ]
+    } ],
+    "dynamicFieldsCaptureList" : [ ],
+    "generateError" : "",
+    "defineError" : "",
+    "dependentScript" : "NONE",
+    "createdBy" : "Anand Raj",
+    "approvedBy" : "",
+    "createdDate" : "",
+    "lastModifiedDate" : ""
+  }, {
+    "scriptId" : "GI180010047-022",
+    "description" : "COMMISSION STRUCTURE - RED",
+    "scriptStatus" : "ACTIVE",
+    "scriptSource" : "Core",
+    "procedureCall" : "",
+    "baseRelease" : "5.1",
+    "productGroup" : "DEALING",
+    "productCode" : "GI",
+    "application" : "COMISSION",
+    "operation" : "CREATE",
+    "sequence" : "022",
+    "tableDefinitionList" : [ {
+      "tableName" : "AGENT STRUCTURE",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "Structure ID",
+        "fieldValue" : "G1AX",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Structure Name",
+        "fieldValue" : "Structure_SSGI1800100256",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Structure type",
+        "fieldValue" : "0001",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Penalty type",
+        "fieldValue" : "0001",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Percentage",
+        "fieldValue" : "10",
+        "fieldInput" : "YES"
+      } ]
+    } ],
+    "dynamicFieldsCaptureList" : [ ],
+    "generateError" : "",
+    "defineError" : "",
+    "dependentScript" : "NONE",
+    "createdBy" : "Anand Raj",
+    "approvedBy" : "",
+    "createdDate" : "",
+    "lastModifiedDate" : ""
+  }, {
+    "scriptId" : "GI180010047-023",
+    "description" : "Outlet",
+    "scriptStatus" : "ACTIVE",
+    "scriptSource" : "Core",
+    "procedureCall" : "",
+    "baseRelease" : "5.1",
+    "productGroup" : "DEALING",
+    "productCode" : "GI",
+    "application" : "AGENT",
+    "operation" : "CREATE",
+    "sequence" : "023",
+    "tableDefinitionList" : [ {
+      "tableName" : "AGENT",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "Name",
+        "fieldValue" : "Outlet_SSGI180010047 ",
+        "fieldInput" : "NO"
+      }, {
+        "fieldName" : "Agent type",
+        "fieldValue" : "0006",
+        "fieldInput" : "NO"
+      }, {
+        "fieldName" : "Country",
+        "fieldValue" : "LU",
+        "fieldInput" : "NO"
+      }, {
+        "fieldName" : "Language",
+        "fieldValue" : "2",
+        "fieldInput" : "NO"
+      }, {
+        "fieldName" : "Start date",
+        "fieldValue" : "01-Jan-2015",
+        "fieldInput" : "NO"
+      }, {
+        "fieldName" : "Agent ccy.",
+        "fieldValue" : "EUR",
+        "fieldInput" : "NO"
+      }, {
+        "fieldName" : "AML type",
+        "fieldValue" : "0000",
+        "fieldInput" : "NO"
+      }, {
+        "fieldName" : "Right type ID",
+        "fieldValue" : "ALL",
+        "fieldInput" : "NO"
+      }, {
+        "fieldName" : "AML agent",
+        "fieldValue" : "0",
+        "fieldInput" : "NO"
+      }, {
+        "fieldName" : "FATCA status",
+        "fieldValue" : "0000",
+        "fieldInput" : "NO"
+      }, {
+        "fieldName" : "GIIN number",
+        "fieldValue" : "32546546",
+        "fieldInput" : "NO"
+      }, {
+        "fieldName" : "Reporting entity",
+        "fieldValue" : "0000",
+        "fieldInput" : "NO"
+      }, {
+        "fieldName" : "PII disclosure",
+        "fieldValue" : "0001",
+        "fieldInput" : "NO"
+      }, {
+        "fieldName" : "Distr.channel",
+        "fieldValue" : "0001",
+        "fieldInput" : "NO"
+      }, {
+        "fieldName" : "Dft.Comm.type",
+        "fieldValue" : "0001",
+        "fieldInput" : "NO"
+      }, {
+        "fieldName" : "CRS Status",
+        "fieldValue" : "0000",
+        "fieldInput" : "NO"
+      }, {
+        "fieldName" : "TIN Number",
+        "fieldValue" : "232434",
+        "fieldInput" : "NO"
+      }, {
+        "fieldName" : "MIFID Status",
+        "fieldValue" : "0001",
+        "fieldInput" : "NO"
+      }, {
+        "fieldName" : "Adv. Type",
+        "fieldValue" : "D",
+        "fieldInput" : "NO"
+      }, {
+        "fieldName" : "Fund promoter",
+        "fieldValue" : "~LINKGI180010047-012#NPROMOTER",
+        "fieldInput" : "NO"
+      }, {
+        "fieldName" : "Agent External ref.",
+        "fieldValue" : "G1AOUTX02",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Reporting ccy.",
+        "fieldValue" : "EUR",
+        "fieldInput" : "YES"
+      } ]
+    }, {
+      "tableName" : "ADDRESSES",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "Address line 1",
+        "fieldValue" : "123232",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Postal code ID",
+        "fieldValue" : ".",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Country",
+        "fieldValue" : "LU",
+        "fieldInput" : "YES"
+      } ]
+    }, {
+      "tableName" : "EQUIVALENCE VALUES",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "External value",
+        "fieldValue" : "G1AOUTX02",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Provider",
+        "fieldValue" : "00",
+        "fieldInput" : "YES"
+      } ]
+    } ],
+    "dynamicFieldsCaptureList" : [ {
+      "tableName" : "AGENT",
+      "dynamicColumnsList" : [ {
+        "columnName" : "Agent ID"
+      } ]
+    } ],
+    "generateError" : "",
+    "defineError" : "",
+    "dependentScript" : "NONE",
+    "createdBy" : "Anand Raj",
+    "approvedBy" : "",
+    "createdDate" : "",
+    "lastModifiedDate" : ""
+  }, {
+    "scriptId" : "GI180010047-024",
+    "description" : "Structure Distribution ",
+    "scriptStatus" : "ACTIVE",
+    "scriptSource" : "Core",
+    "procedureCall" : "",
+    "baseRelease" : "5.1",
+    "productGroup" : "DEALING",
+    "productCode" : "GI",
+    "application" : "COMISSION",
+    "operation" : "CREATE",
+    "sequence" : "024",
+    "tableDefinitionList" : [ {
+      "tableName" : "COMISSION DISRIBUTION BY  STRUCTURE",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "Structure Id",
+        "fieldValue" : "G1A",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Agent Id 1",
+        "fieldValue" : "0",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Percentage 1",
+        "fieldValue" : "100",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Commission type1",
+        "fieldValue" : "0001",
+        "fieldInput" : "YES"
+      } ]
+    } ],
+    "dynamicFieldsCaptureList" : [ ],
+    "generateError" : "",
+    "defineError" : "",
+    "dependentScript" : "NONE",
+    "createdBy" : "Anand Raj",
+    "approvedBy" : "",
+    "createdDate" : "",
+    "lastModifiedDate" : ""
+  }, {
+    "scriptId" : "GI180010047-025",
+    "description" : "STRUCTURE DISTRIBUTION SWITCH",
+    "scriptStatus" : "ACTIVE",
+    "scriptSource" : "Core",
+    "procedureCall" : "",
+    "baseRelease" : "5.1",
+    "productGroup" : "DEALING",
+    "productCode" : "GI",
+    "application" : "COMISSION",
+    "operation" : "CREATE",
+    "sequence" : "025",
+    "tableDefinitionList" : [ {
+      "tableName" : "COMISSION DISRIBUTION BY  STRUCTURE",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "Structure Id",
+        "fieldValue" : "G1AX",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Agent Id 1",
+        "fieldValue" : "0",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Percentage 1",
+        "fieldValue" : "100",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Commission type1",
+        "fieldValue" : "0001",
+        "fieldInput" : "YES"
+      } ]
+    } ],
+    "dynamicFieldsCaptureList" : [ ],
+    "generateError" : "",
+    "defineError" : "",
+    "dependentScript" : "NONE",
+    "createdBy" : "Anand Raj",
+    "approvedBy" : "",
+    "createdDate" : "",
+    "lastModifiedDate" : ""
+  }, {
+    "scriptId" : "GI180010047-026",
+    "description" : "Agent Structure Link",
+    "scriptStatus" : "ACTIVE",
+    "scriptSource" : "Core",
+    "procedureCall" : "",
+    "baseRelease" : "5.1",
+    "productGroup" : "DEALING",
+    "productCode" : "GI",
+    "application" : "COMISSION",
+    "operation" : "CREATE",
+    "sequence" : "026",
+    "tableDefinitionList" : [ {
+      "tableName" : "AGENT STRUCTURE LINK",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "Agent ID",
+        "fieldValue" : "~LINKGI180010047-023#NOUTLET",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Group type",
+        "fieldValue" : "G1A",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Share class",
+        "fieldValue" : "A",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Operation",
+        "fieldValue" : "0001",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Condition method",
+        "fieldValue" : "0000",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Structure ID",
+        "fieldValue" : "G1A",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "updateCode",
+        "fieldValue" : "N",
+        "fieldInput" : "YES"
+      } ]
+    } ],
+    "dynamicFieldsCaptureList" : [ ],
+    "generateError" : "",
+    "defineError" : "",
+    "dependentScript" : "NONE",
+    "createdBy" : "Anand Raj",
+    "approvedBy" : "",
+    "createdDate" : "",
+    "lastModifiedDate" : ""
+  }, {
+    "scriptId" : "GI180010047-027",
+    "description" : "AGENT STRUCTURE SWITCH SUB",
+    "scriptStatus" : "ACTIVE",
+    "scriptSource" : "Core",
+    "procedureCall" : "",
+    "baseRelease" : "5.1",
+    "productGroup" : "DEALING",
+    "productCode" : "GI",
+    "application" : "COMISSION",
+    "operation" : "CREATE",
+    "sequence" : "027",
+    "tableDefinitionList" : [ {
+      "tableName" : "AGENT STRUCTURE LINK",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "Agent ID",
+        "fieldValue" : "~LINKGI180010047-023#NOUTLET",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Group type",
+        "fieldValue" : "G1A",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Share class",
+        "fieldValue" : "A",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Operation",
+        "fieldValue" : "0004",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Condition method",
+        "fieldValue" : "0006",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Structure ID",
+        "fieldValue" : "G1A",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "updateCode",
+        "fieldValue" : "N",
+        "fieldInput" : "YES"
+      } ]
+    } ],
+    "dynamicFieldsCaptureList" : [ ],
+    "generateError" : "",
+    "defineError" : "",
+    "dependentScript" : "NONE",
+    "createdBy" : "Anand Raj",
+    "approvedBy" : "",
+    "createdDate" : "",
+    "lastModifiedDate" : ""
+  }, {
+    "scriptId" : "GI180010047-028",
+    "description" : "AGENT STRUCTURE LINK SWITCH REDEMPTION",
+    "scriptStatus" : "ACTIVE",
+    "scriptSource" : "Core",
+    "procedureCall" : "",
+    "baseRelease" : "5.1",
+    "productGroup" : "DEALING",
+    "productCode" : "GI",
+    "application" : "COMISSION",
+    "operation" : "CREATE",
+    "sequence" : "028",
+    "tableDefinitionList" : [ {
+      "tableName" : "AGENT STRUCTURE LINK",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "Agent ID",
+        "fieldValue" : "~LINKGI180010047-023#NOUTLET",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Group type",
+        "fieldValue" : "G1A",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Share class",
+        "fieldValue" : "A",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Operation",
+        "fieldValue" : "0003",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Condition method",
+        "fieldValue" : "0006",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Structure ID",
+        "fieldValue" : "G1AX",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "updateCode",
+        "fieldValue" : "N",
+        "fieldInput" : "YES"
+      } ]
+    } ],
+    "dynamicFieldsCaptureList" : [ ],
+    "generateError" : "",
+    "defineError" : "",
+    "dependentScript" : "NONE",
+    "createdBy" : "Anand Raj",
+    "approvedBy" : "",
+    "createdDate" : "",
+    "lastModifiedDate" : ""
+  }, {
+    "scriptId" : "GI180010047-029",
+    "description" : "Client Creation",
+    "scriptStatus" : "ACTIVE",
+    "scriptSource" : "Core",
+    "procedureCall" : "",
+    "baseRelease" : "5.1",
+    "productGroup" : "DEALING",
+    "productCode" : "GI",
+    "application" : "CLIENT",
+    "operation" : "CREATE",
+    "sequence" : "029",
+    "tableDefinitionList" : [ {
+      "tableName" : "CLIENT",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "External ref.",
+        "fieldValue" : "G1ACLIX01F",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Title",
+        "fieldValue" : "0001",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Name",
+        "fieldValue" : "Client_SSGI180010047 ",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "First name",
+        "fieldValue" : "Client_Test",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Short name",
+        "fieldValue" : "SGZ",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Citizenship",
+        "fieldValue" : "LU",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Residence",
+        "fieldValue" : "LU",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Language",
+        "fieldValue" : "2",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Date of birth",
+        "fieldValue" : "01-Jan-2010",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Sex",
+        "fieldValue" : "0001",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Currency",
+        "fieldValue" : "EUR",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Person type",
+        "fieldValue" : "0001",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Register type",
+        "fieldValue" : "0001",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Tax options",
+        "fieldValue" : "00",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Tax residence",
+        "fieldValue" : "LU",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "AML type",
+        "fieldValue" : "0001",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Long name",
+        "fieldValue" : "Client_SSGI180010047_Client_Test",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Use type",
+        "fieldValue" : "1",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "AML jurisdiction",
+        "fieldValue" : "LU",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "PII disclosure",
+        "fieldValue" : "0001",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Know your client",
+        "fieldValue" : "C",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Distr.channel",
+        "fieldValue" : "0001",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Agent ID",
+        "fieldValue" : "~LINKGI180010047-023#NOUTLET",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "MIFID Status",
+        "fieldValue" : "0001",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Adv. Type",
+        "fieldValue" : "D",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Reporting entity",
+        "fieldValue" : "0000",
+        "fieldInput" : "YES"
+      } ]
+    }, {
+      "tableName" : "ADDRESSES",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "Address line 1",
+        "fieldValue" : "123",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Postal code ID",
+        "fieldValue" : ".",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Country",
+        "fieldValue" : "LU",
+        "fieldInput" : "YES"
+      } ]
+    } ],
+    "dynamicFieldsCaptureList" : [ {
+      "tableName" : "CLIENT",
+      "dynamicColumnsList" : [ {
+        "columnName" : "Client ID"
+      } ]
+    } ],
+    "generateError" : "",
+    "defineError" : "",
+    "dependentScript" : "NONE",
+    "createdBy" : "Anand Raj",
+    "approvedBy" : "",
+    "createdDate" : "",
+    "lastModifiedDate" : ""
+  }, {
+    "scriptId" : "GI180010047-030",
+    "description" : "Register ",
+    "scriptStatus" : "ACTIVE",
+    "scriptSource" : "Core",
+    "procedureCall" : "",
+    "baseRelease" : "5.1",
+    "productGroup" : "DEALING",
+    "productCode" : "GI",
+    "application" : "REGISTER",
+    "operation" : "CREATE",
+    "sequence" : "030",
+    "tableDefinitionList" : [ {
+      "tableName" : "REGISTER",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "Person type",
+        "fieldValue" : "0001",
+        "fieldInput" : "NO"
+      }, {
+        "fieldName" : "Name",
+        "fieldValue" : "Register_SSGI180010047 ",
+        "fieldInput" : "NO"
+      }, {
+        "fieldName" : "Citizenship",
+        "fieldValue" : "LU",
+        "fieldInput" : "NO"
+      }, {
+        "fieldName" : "Residence",
+        "fieldValue" : "LU",
+        "fieldInput" : "NO"
+      }, {
+        "fieldName" : "Language",
+        "fieldValue" : "2",
+        "fieldInput" : "NO"
+      }, {
+        "fieldName" : "Register type",
+        "fieldValue" : "0002",
+        "fieldInput" : "NO"
+      }, {
+        "fieldName" : "Currency",
+        "fieldValue" : "EUR",
+        "fieldInput" : "NO"
+      }, {
+        "fieldName" : "Group type",
+        "fieldValue" : "0000",
+        "fieldInput" : "NO"
+      }, {
+        "fieldName" : "Tax residence",
+        "fieldValue" : "LU",
+        "fieldInput" : "NO"
+      }, {
+        "fieldName" : "Agent ID",
+        "fieldValue" : "~LINKGI180010047-023#NOUTLET",
+        "fieldInput" : "NO"
+      }, {
+        "fieldName" : "External ref.",
+        "fieldValue" : "G1AREG0032X1",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "First name",
+        "fieldValue" : "REGISTER ",
+        "fieldInput" : "NO"
+      }, {
+        "fieldName" : "gender",
+        "fieldValue" : "0001",
+        "fieldInput" : "NO"
+      }, {
+        "fieldName" : "Title",
+        "fieldValue" : "0001",
+        "fieldInput" : "NO"
+      }, {
+        "fieldName" : "Reinvestment Register type",
+        "fieldValue" : "0001",
+        "fieldInput" : "NO"
+      }, {
+        "fieldName" : "Settlement type",
+        "fieldValue" : "0002",
+        "fieldInput" : "NO"
+      }, {
+        "fieldName" : "Deal type",
+        "fieldValue" : "0001",
+        "fieldInput" : "NO"
+      }, {
+        "fieldName" : "Product type",
+        "fieldValue" : "14",
+        "fieldInput" : "NO"
+      }, {
+        "fieldName" : "Place of birth",
+        "fieldValue" : "10-Jan-2018",
+        "fieldInput" : "NO"
+      }, {
+        "fieldName" : "Tax options",
+        "fieldValue" : "00",
+        "fieldInput" : "NO"
+      }, {
+        "fieldName" : "TFC ID",
+        "fieldValue" : "~LINKGI180010047-013#NTFC",
+        "fieldInput" : "NO"
+      }, {
+        "fieldName" : "Long name",
+        "fieldValue" : "SGZ",
+        "fieldInput" : "NO"
+      }, {
+        "fieldName" : "Know your client",
+        "fieldValue" : "C",
+        "fieldInput" : "NO"
+      }, {
+        "fieldName" : "PII disclosure",
+        "fieldValue" : "0001",
+        "fieldInput" : "NO"
+      }, {
+        "fieldName" : "Distr.channel",
+        "fieldValue" : "0001",
+        "fieldInput" : "NO"
+      }, {
+        "fieldName" : "mifidStatus",
+        "fieldValue" : "0001",
+        "fieldInput" : "NO"
+      }, {
+        "fieldName" : "Adv. Type",
+        "fieldValue" : "D",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Internal Client ID",
+        "fieldValue" : "~LINKGI180010047-029#NCLIENT",
+        "fieldInput" : "NO"
+      }, {
+        "fieldName" : "Date of birth",
+        "fieldValue" : "10-Jan-2018",
+        "fieldInput" : "YES"
+      } ]
+    }, {
+      "tableName" : "ADDRESSES",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "Address line 1",
+        "fieldValue" : "123",
+        "fieldInput" : "NO"
+      }, {
+        "fieldName" : "Postal code ID",
+        "fieldValue" : ".",
+        "fieldInput" : "NO"
+      }, {
+        "fieldName" : "Country",
+        "fieldValue" : "LU",
+        "fieldInput" : "NO"
+      } ]
+    }, {
+      "tableName" : "EQUIVALENCE VALUES",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "externalRegisterNumber",
+        "fieldValue" : "G1AREG0032X1",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Provider",
+        "fieldValue" : "00",
+        "fieldInput" : "YES"
+      } ]
+    }, {
+      "tableName" : "ACCOUNTS",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "externalCorrespondantReference",
+        "fieldValue" : "361",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Currency",
+        "fieldValue" : "EUR",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Bene. account number",
+        "fieldValue" : "4964646",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Bene. account name",
+        "fieldValue" : "SGZ",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Acc. type",
+        "fieldValue" : "0000",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Charges",
+        "fieldValue" : "N",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Type",
+        "fieldValue" : "103",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Swift Pay. Bank",
+        "fieldValue" : "Y",
+        "fieldInput" : "YES"
+      } ]
+    } ],
+    "dynamicFieldsCaptureList" : [ {
+      "tableName" : "REGISTER",
+      "dynamicColumnsList" : [ {
+        "columnName" : "Register ID"
+      } ]
+    } ],
+    "generateError" : "",
+    "defineError" : "",
+    "dependentScript" : "NONE",
+    "createdBy" : "Anand Raj",
+    "approvedBy" : "",
+    "createdDate" : "",
+    "lastModifiedDate" : ""
+  }, {
+    "scriptId" : "GI180010047-031",
+    "description" : "Order Creation",
+    "scriptStatus" : "ACTIVE",
+    "scriptSource" : "Core",
+    "procedureCall" : "",
+    "baseRelease" : "5.1",
+    "productGroup" : "DEALING",
+    "productCode" : "GI",
+    "application" : "ORDER",
+    "operation" : "CREATE",
+    "sequence" : "031",
+    "tableDefinitionList" : [ {
+      "tableName" : "ORDER",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "ExternalOrderNumber",
+        "fieldValue" : "G1AORDNGX01",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Received",
+        "fieldValue" : "02-Jan-2018",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "ExternalRegisterNumber",
+        "fieldValue" : "G1AREG0032X1",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Operation",
+        "fieldValue" : "0001",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Fund ID",
+        "fieldValue" : "G1ATAF",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Share class",
+        "fieldValue" : "A",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Type of payment",
+        "fieldValue" : "03",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Payment ccy.",
+        "fieldValue" : "EUR",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "orderAmount",
+        "fieldValue" : "1000000",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "confirmedFlag",
+        "fieldValue" : "Y",
+        "fieldInput" : "YES"
+      } ]
+    } ],
+    "dynamicFieldsCaptureList" : [ ],
+    "generateError" : "",
+    "defineError" : "",
+    "dependentScript" : "NONE",
+    "createdBy" : "Anand Raj",
+    "approvedBy" : "",
+    "createdDate" : "",
+    "lastModifiedDate" : ""
+  }, {
+    "scriptId" : "GI180010047-032",
+    "description" : "NAV Process",
+    "scriptStatus" : "ACTIVE",
+    "scriptSource" : "Core",
+    "procedureCall" : "",
+    "baseRelease" : "5.1",
+    "productGroup" : "DEALING",
+    "productCode" : "GI",
+    "application" : "SHARE PRICE",
+    "operation" : "CREATE",
+    "sequence" : "032",
+    "tableDefinitionList" : [ {
+      "tableName" : "SHARE PRICE",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "Fund ID",
+        "fieldValue" : "G1ATAF",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Share class",
+        "fieldValue" : "A",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "NAV date",
+        "fieldValue" : "02-Jan-2018",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Share price",
+        "fieldValue" : "10000000",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Share price subscription",
+        "fieldValue" : "10000000",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Share price redemption",
+        "fieldValue" : "10000000",
+        "fieldInput" : "YES"
+      } ]
+    } ],
+    "dynamicFieldsCaptureList" : [ ],
+    "generateError" : "",
+    "defineError" : "",
+    "dependentScript" : "NONE",
+    "createdBy" : "Anand Raj",
+    "approvedBy" : "",
+    "createdDate" : "",
+    "lastModifiedDate" : ""
+  }, {
+    "scriptId" : "GI180010047-033",
+    "description" : "Simulation Process",
+    "scriptStatus" : "ACTIVE",
+    "scriptSource" : "Core",
+    "procedureCall" : "",
+    "baseRelease" : "5.1",
+    "productGroup" : "DEALING",
+    "productCode" : "GI",
+    "application" : "ORDER SIMULATION - PROCESS",
+    "operation" : "CREATE",
+    "sequence" : "033",
+    "tableDefinitionList" : [ {
+      "tableName" : "ORDER SIMULATION - PROCESS",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "Exchange group",
+        "fieldValue" : "G1A",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Processing date",
+        "fieldValue" : "02-Jan-2018",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Process code",
+        "fieldValue" : "Null",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Cretour",
+        "fieldValue" : "Null",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Nproc",
+        "fieldValue" : "Null",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Message",
+        "fieldValue" : "Null",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Cetat",
+        "fieldValue" : "Null",
+        "fieldInput" : "YES"
+      } ]
+    } ],
+    "dynamicFieldsCaptureList" : [ ],
+    "generateError" : "",
+    "defineError" : "",
+    "dependentScript" : "NONE",
+    "createdBy" : "Anand Raj",
+    "approvedBy" : "",
+    "createdDate" : "",
+    "lastModifiedDate" : ""
+  }, {
+    "scriptId" : "GI180010047-034",
+    "description" : "Client Trading desk Screen",
+    "scriptStatus" : "ACTIVE",
+    "scriptSource" : "Core",
+    "procedureCall" : "",
+    "baseRelease" : "5.1",
+    "productGroup" : "DEALING",
+    "productCode" : "GI",
+    "application" : "FINAL CLIENT TRADING DESK - PROCESS",
+    "operation" : "CREATE",
+    "sequence" : "034",
+    "tableDefinitionList" : [ {
+      "tableName" : "FINAL CLIENT TRADING DESK - PROCESS",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "Client trading desk(C)",
+        "fieldValue" : "C",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Exchange group",
+        "fieldValue" : "G1A",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Processing date",
+        "fieldValue" : "02-Jan-2018",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Final TD(F)",
+        "fieldValue" : "F",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Cretour",
+        "fieldValue" : "Null",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Nproc",
+        "fieldValue" : "Null",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Message",
+        "fieldValue" : "Null",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Cetat",
+        "fieldValue" : "Null",
+        "fieldInput" : "YES"
+      } ]
+    } ],
+    "dynamicFieldsCaptureList" : [ ],
+    "generateError" : "",
+    "defineError" : "",
+    "dependentScript" : "NONE",
+    "createdBy" : "Anand Raj",
+    "approvedBy" : "",
+    "createdDate" : "",
+    "lastModifiedDate" : ""
+  }, {
+    "scriptId" : "GI180010047-035",
+    "description" : "Batch Process",
+    "scriptStatus" : "ACTIVE",
+    "scriptSource" : "Core",
+    "procedureCall" : "",
+    "baseRelease" : "5.1",
+    "productGroup" : "DEALING",
+    "productCode" : "GI",
+    "application" : "ORDER BATCH - PROCESS",
+    "operation" : "CREATE",
+    "sequence" : "035",
+    "tableDefinitionList" : [ {
+      "tableName" : "ORDER BATCH - PROCESS",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "Exchange group",
+        "fieldValue" : "G1A",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Process code",
+        "fieldValue" : "Null",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Processing date",
+        "fieldValue" : "02-Jan-2018",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Cretour",
+        "fieldValue" : "Null",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Nproc",
+        "fieldValue" : "Null",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Message",
+        "fieldValue" : "Null",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Cetat",
+        "fieldValue" : "Null",
+        "fieldInput" : "YES"
+      } ]
+    } ],
+    "dynamicFieldsCaptureList" : [ ],
+    "generateError" : "",
+    "defineError" : "",
+    "dependentScript" : "NONE",
+    "createdBy" : "Anand Raj",
+    "approvedBy" : "",
+    "createdDate" : "",
+    "lastModifiedDate" : ""
+  }, {
+    "scriptId" : "GI180010047-036",
+    "description" : "ORDER SWITCH",
+    "scriptStatus" : "ACTIVE",
+    "scriptSource" : "Core",
+    "procedureCall" : "",
+    "baseRelease" : "5.1",
+    "productGroup" : "DEALING",
+    "productCode" : "GI",
+    "application" : "ORDER",
+    "operation" : "CREATE",
+    "sequence" : "036",
+    "tableDefinitionList" : [ {
+      "tableName" : "ORDER",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "ExternalOrderNumber",
+        "fieldValue" : "G1AORDSGX01",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Received",
+        "fieldValue" : "02-Jan-2018",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "ExternalRegisterNumber",
+        "fieldValue" : "G1AREG0032X1",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Operation",
+        "fieldValue" : "0007",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Fund ID",
+        "fieldValue" : "G1ATAF",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Share class",
+        "fieldValue" : "A",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Type of payment",
+        "fieldValue" : "03",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Payment ccy.",
+        "fieldValue" : "EUR",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "orderAmount",
+        "fieldValue" : "200000",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "confirmedFlag",
+        "fieldValue" : "Y",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "switchInTAFundCode",
+        "fieldValue" : "G1ATA1",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "switchInShareClassCode",
+        "fieldValue" : "A",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "forcedCommissionRate",
+        "fieldValue" : "8000000",
+        "fieldInput" : "YES"
+      } ]
+    } ],
+    "dynamicFieldsCaptureList" : [ {
+      "tableName" : "ORDER",
+      "dynamicColumnsList" : [ {
+        "columnName" : "ExternalOrderNumber"
+      } ]
+    } ],
+    "generateError" : "",
+    "defineError" : "",
+    "dependentScript" : "NONE",
+    "createdBy" : "Anand Raj",
+    "approvedBy" : "",
+    "createdDate" : "",
+    "lastModifiedDate" : ""
+  }, {
+    "scriptId" : "GI180010047-037",
+    "description" : "NAV SWITCH OUT",
+    "scriptStatus" : "ACTIVE",
+    "scriptSource" : "Core",
+    "procedureCall" : "",
+    "baseRelease" : "5.1",
+    "productGroup" : "DEALING",
+    "productCode" : "GI",
+    "application" : "SHARE PRICE",
+    "operation" : "CREATE",
+    "sequence" : "037",
+    "tableDefinitionList" : [ {
+      "tableName" : "SHARE PRICE",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "Fund ID",
+        "fieldValue" : "G1ATAF",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Share class",
+        "fieldValue" : "A",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "NAV date",
+        "fieldValue" : "02-Jan-2018",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Share price",
+        "fieldValue" : "10000000",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Share price subscription",
+        "fieldValue" : "10000000",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Share price redemption",
+        "fieldValue" : "10000000",
+        "fieldInput" : "YES"
+      } ]
+    } ],
+    "dynamicFieldsCaptureList" : [ ],
+    "generateError" : "",
+    "defineError" : "",
+    "dependentScript" : "NONE",
+    "createdBy" : "Anand Raj",
+    "approvedBy" : "",
+    "createdDate" : "",
+    "lastModifiedDate" : ""
+  }, {
+    "scriptId" : "GI180010047-038",
+    "description" : "NAV SWITCH IN",
+    "scriptStatus" : "ACTIVE",
+    "scriptSource" : "Core",
+    "procedureCall" : "",
+    "baseRelease" : "5.1",
+    "productGroup" : "DEALING",
+    "productCode" : "GI",
+    "application" : "SHARE PRICE",
+    "operation" : "CREATE",
+    "sequence" : "038",
+    "tableDefinitionList" : [ {
+      "tableName" : "SHARE PRICE",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "Fund ID",
+        "fieldValue" : "G1ATA1",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Share class",
+        "fieldValue" : "A",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "NAV date",
+        "fieldValue" : "02-Jan-2018",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Share price",
+        "fieldValue" : "10000000",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Share price subscription",
+        "fieldValue" : "10000000",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Share price redemption",
+        "fieldValue" : "10000000",
+        "fieldInput" : "YES"
+      } ]
+    } ],
+    "dynamicFieldsCaptureList" : [ ],
+    "generateError" : "",
+    "defineError" : "",
+    "dependentScript" : "NONE",
+    "createdBy" : "Anand Raj",
+    "approvedBy" : "",
+    "createdDate" : "",
+    "lastModifiedDate" : ""
+  }, {
+    "scriptId" : "GI180010047-039",
+    "description" : "Simulation Process",
+    "scriptStatus" : "ACTIVE",
+    "scriptSource" : "Core",
+    "procedureCall" : "",
+    "baseRelease" : "5.1",
+    "productGroup" : "DEALING",
+    "productCode" : "GI",
+    "application" : "ORDER SIMULATION - PROCESS",
+    "operation" : "CREATE",
+    "sequence" : "039",
+    "tableDefinitionList" : [ {
+      "tableName" : "ORDER SIMULATION - PROCESS",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "Exchange group",
+        "fieldValue" : "G1A",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Processing date",
+        "fieldValue" : "02-Jan-2018",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Process code",
+        "fieldValue" : "Null",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Cretour",
+        "fieldValue" : "Null",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Nproc",
+        "fieldValue" : "Null",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Message",
+        "fieldValue" : "Null",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Cetat",
+        "fieldValue" : "Null",
+        "fieldInput" : "YES"
+      } ]
+    } ],
+    "dynamicFieldsCaptureList" : [ ],
+    "generateError" : "",
+    "defineError" : "",
+    "dependentScript" : "NONE",
+    "createdBy" : "Anand Raj",
+    "approvedBy" : "",
+    "createdDate" : "",
+    "lastModifiedDate" : ""
+  }, {
+    "scriptId" : "GI180010047-040",
+    "description" : "Client Trading desk Screen",
+    "scriptStatus" : "ACTIVE",
+    "scriptSource" : "Core",
+    "procedureCall" : "",
+    "baseRelease" : "5.1",
+    "productGroup" : "DEALING",
+    "productCode" : "GI",
+    "application" : "FINAL CLIENT TRADING DESK - PROCESS",
+    "operation" : "CREATE",
+    "sequence" : "040",
+    "tableDefinitionList" : [ {
+      "tableName" : "FINAL CLIENT TRADING DESK - PROCESS",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "Client trading desk(C)",
+        "fieldValue" : "C",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Exchange group",
+        "fieldValue" : "G1A",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Processing date",
+        "fieldValue" : "02-Jan-2018",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Final TD(F)",
+        "fieldValue" : "F",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Cretour",
+        "fieldValue" : "Null",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Nproc",
+        "fieldValue" : "Null",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Message",
+        "fieldValue" : "Null",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Cetat",
+        "fieldValue" : "Null",
+        "fieldInput" : "YES"
+      } ]
+    } ],
+    "dynamicFieldsCaptureList" : [ ],
+    "generateError" : "",
+    "defineError" : "",
+    "dependentScript" : "NONE",
+    "createdBy" : "Anand Raj",
+    "approvedBy" : "",
+    "createdDate" : "",
+    "lastModifiedDate" : ""
+  }, {
+    "scriptId" : "GI180010047-041",
+    "description" : "Batch Process",
+    "scriptStatus" : "ACTIVE",
+    "scriptSource" : "Core",
+    "procedureCall" : "",
+    "baseRelease" : "5.1",
+    "productGroup" : "DEALING",
+    "productCode" : "GI",
+    "application" : "ORDER BATCH - PROCESS",
+    "operation" : "CREATE",
+    "sequence" : "041",
+    "tableDefinitionList" : [ {
+      "tableName" : "ORDER BATCH - PROCESS",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "Exchange group",
+        "fieldValue" : "G1A",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Process code",
+        "fieldValue" : "Null",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Processing date",
+        "fieldValue" : "02-Jan-2018",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Cretour",
+        "fieldValue" : "Null",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Nproc",
+        "fieldValue" : "Null",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Message",
+        "fieldValue" : "Null",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Cetat",
+        "fieldValue" : "Null",
+        "fieldInput" : "YES"
+      } ]
+    } ],
+    "dynamicFieldsCaptureList" : [ ],
+    "generateError" : "",
+    "defineError" : "",
+    "dependentScript" : "NONE",
+    "createdBy" : "Anand Raj",
+    "approvedBy" : "",
+    "createdDate" : "",
+    "lastModifiedDate" : ""
+  }, {
+    "scriptId" : "GI180010047-042",
+    "description" : "Batch Process",
+    "scriptStatus" : "ACTIVE",
+    "scriptSource" : "Core",
+    "procedureCall" : "",
+    "baseRelease" : "5.1",
+    "productGroup" : "DEALING",
+    "productCode" : "GI",
+    "application" : "ORDER BATCH - PROCESS",
+    "operation" : "CREATE",
+    "sequence" : "042",
+    "tableDefinitionList" : [ {
+      "tableName" : "ORDER BATCH - PROCESS",
+      "subOperation" : "CREATE",
+      "fieldDefinitionList" : [ {
+        "fieldName" : "Exchange group",
+        "fieldValue" : "G1A",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Process code",
+        "fieldValue" : "Null",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Processing date",
+        "fieldValue" : "02-Jan-2018",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Cretour",
+        "fieldValue" : "Null",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Nproc",
+        "fieldValue" : "Null",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Message",
+        "fieldValue" : "Null",
+        "fieldInput" : "YES"
+      }, {
+        "fieldName" : "Cetat",
+        "fieldValue" : "Null",
+        "fieldInput" : "YES"
+      } ]
+    } ],
+    "dynamicFieldsCaptureList" : [ ],
+    "generateError" : "",
+    "defineError" : "",
+    "dependentScript" : "NONE",
+    "createdBy" : "Anand Raj",
+    "approvedBy" : "",
+    "createdDate" : "",
+    "lastModifiedDate" : ""
+  } ],
+  "fvObjectList" : [ {
+    "description" : "Cash Log file after deal Confirmation",
+    "applicationName" : "CASH LOG FILE - RESULT",
+    "tableName" : "CASH LOG FILE - RESULT",
+    "fvFieldsTableObjectList" : [ {
+      "fieldName" : "Log type",
+      "expectedValue" : "01"
+    }, {
+      "fieldName" : "System",
+      "expectedValue" : "10"
+    }, {
+      "fieldName" : "Deal",
+      "expectedValue" : "231"
+    } ],
+    "fvId" : "GI180010047-036*CASH LOG FILE - SWITCH OUT RESULT"
+  }, {
+    "description" : "Order Validation Switch Out",
+    "applicationName" : "ORDER",
+    "tableName" : "ORDER",
+    "fvFieldsTableObjectList" : [ {
+      "fieldName" : "Trade date",
+      "expectedValue" : "02-Jan-2018"
+    }, {
+      "fieldName" : "Value date",
+      "expectedValue" : "05-Jan-2018"
+    }, {
+      "fieldName" : "forcedCommissionRate",
+      "expectedValue" : "8"
+    } ],
+    "fvId" : "GI180010047-036*ORDER OUT"
+  }, {
+    "description" : "Order Validation Switch In",
+    "applicationName" : "ORDER",
+    "tableName" : "ORDER",
+    "fvFieldsTableObjectList" : [ {
+      "fieldName" : "Trade date",
+      "expectedValue" : "02-Jan-2018"
+    }, {
+      "fieldName" : "Value date",
+      "expectedValue" : "05-Jan-2018"
+    } ],
+    "fvId" : "GI180010047-036*ORDER IN"
+  }, {
+    "description" : "SIMULATION HISTORICAL FILE - SWITCH OUT RESULT",
+    "applicationName" : "SIMULATION HISTORICAL FILE - RESULT",
+    "tableName" : "SIMULATION HISTORICAL FILE - RESULT",
+    "fvFieldsTableObjectList" : [ {
+      "fieldName" : "Total commission in quotation ccy.",
+      "expectedValue" : "148.15"
+    }, {
+      "fieldName" : "Order trade date",
+      "expectedValue" : "02-Jan-2018"
+    }, {
+      "fieldName" : "Contract trade date",
+      "expectedValue" : "02-Jan-2018"
+    }, {
+      "fieldName" : "Value date",
+      "expectedValue" : "05-Jan-2018"
+    }, {
+      "fieldName" : "Deal status",
+      "expectedValue" : "231"
+    }, {
+      "fieldName" : "Net amount in quotation ccy.",
+      "expectedValue" : "1851.85"
+    }, {
+      "fieldName" : "Net amount in reference ccy.",
+      "expectedValue" : "1851.85"
+    }, {
+      "fieldName" : "Gross amount in quotation ccy.",
+      "expectedValue" : "2000"
+    }, {
+      "fieldName" : "Contract quantity",
+      "expectedValue" : "200"
+    } ],
+    "fvId" : "GI180010047-039*SIMULATION HISTORICAL FILE - SWITCH OUT RESULT"
+  }, {
+    "description" : "SIMULATION HISTORICAL FILE - SWITCH IN RESULT",
+    "applicationName" : "SIMULATION HISTORICAL FILE - RESULT",
+    "tableName" : "SIMULATION HISTORICAL FILE - RESULT",
+    "fvFieldsTableObjectList" : [ {
+      "fieldName" : "Total commission in quotation ccy.",
+      "expectedValue" : "200"
+    }, {
+      "fieldName" : "Order trade date",
+      "expectedValue" : "02-Jan-2018"
+    }, {
+      "fieldName" : "Contract trade date",
+      "expectedValue" : "02-Jan-2018"
+    }, {
+      "fieldName" : "Value date",
+      "expectedValue" : "05-Jan-2018"
+    }, {
+      "fieldName" : "Deal status",
+      "expectedValue" : "231"
+    }, {
+      "fieldName" : "Net amount in quotation ccy.",
+      "expectedValue" : "2000"
+    }, {
+      "fieldName" : "Net amount in reference ccy.",
+      "expectedValue" : "2000"
+    }, {
+      "fieldName" : "Gross amount in quotation ccy.",
+      "expectedValue" : "1800"
+    }, {
+      "fieldName" : "Contract quantity",
+      "expectedValue" : "180"
+    } ],
+    "fvId" : "GI180010047-039*SIMULATION HISTORICAL FILE - SWITCH IN RESULT"
+  }, {
+    "description" : "Cash Log File after Confirmation Switch Out",
+    "applicationName" : "CASH LOG FILE - RESULT",
+    "tableName" : "CASH LOG FILE - RESULT",
+    "fvFieldsTableObjectList" : [ {
+      "fieldName" : "Log type",
+      "expectedValue" : "03"
+    }, {
+      "fieldName" : "System",
+      "expectedValue" : "20"
+    }, {
+      "fieldName" : "Deal",
+      "expectedValue" : "20"
+    }, {
+      "fieldName" : "Exchange rate",
+      "expectedValue" : "1"
+    }, {
+      "fieldName" : "Contract quantity",
+      "expectedValue" : "200"
+    }, {
+      "fieldName" : "NAV price",
+      "expectedValue" : "10"
+    }, {
+      "fieldName" : "Oper. order",
+      "expectedValue" : "0007"
+    }, {
+      "fieldName" : "Gross amount in quotation ccy.",
+      "expectedValue" : "2000"
+    }, {
+      "fieldName" : "Gross amount in reference ccy.",
+      "expectedValue" : "2000"
+    }, {
+      "fieldName" : "Net amount in quotation ccy.",
+      "expectedValue" : "1851.85"
+    }, {
+      "fieldName" : "Net amount in reference ccy.",
+      "expectedValue" : "1851.85"
+    }, {
+      "fieldName" : "Commission in quot. ccy.1",
+      "expectedValue" : "148.15"
+    } ],
+    "fvId" : "GI180010047-041*CASH LOG FILE - Switch Out RESULT"
+  }, {
+    "description" : "Contract Summery Switch OUT",
+    "applicationName" : "REGISTER CONTRACTS SUMMARY - RESULT",
+    "tableName" : "REGISTER CONTRACTS SUMMARY - RESULT",
+    "fvFieldsTableObjectList" : [ {
+      "fieldName" : "Operation date",
+      "expectedValue" : "02-Jan-2018"
+    }, {
+      "fieldName" : "Value date",
+      "expectedValue" : "05-Jan-2018"
+    }, {
+      "fieldName" : "Amount",
+      "expectedValue" : "2000"
+    }, {
+      "fieldName" : "Net amount",
+      "expectedValue" : "1851.85"
+    }, {
+      "fieldName" : "Share price",
+      "expectedValue" : "10"
+    }, {
+      "fieldName" : "Payment amount ccy",
+      "expectedValue" : "EUR"
+    }, {
+      "fieldName" : "Quantity",
+      "expectedValue" : "200"
+    }, {
+      "fieldName" : "Total commission",
+      "expectedValue" : "148.15"
+    }, {
+      "fieldName" : "Status",
+      "expectedValue" : "20"
+    } ],
+    "fvId" : "GI180010047-041*REGISTER CONTRACTS SUMMARY - SWITCH OUT RESULT"
+  }, {
+    "description" : "Register Movement Switch Out",
+    "applicationName" : "REGISTER MOVEMENTS - RESULT",
+    "tableName" : "REGISTER MOVEMENTS - RESULT",
+    "fvFieldsTableObjectList" : [ {
+      "fieldName" : "Value  date",
+      "expectedValue" : "05-Jan-2018"
+    }, {
+      "fieldName" : "Net amount",
+      "expectedValue" : "1851.85"
+    }, {
+      "fieldName" : "Quantity",
+      "expectedValue" : "200"
+    }, {
+      "fieldName" : "Status",
+      "expectedValue" : "20"
+    } ],
+    "fvId" : "GI180010047-041*REGISTER MOVEMENTS - SWITCH OUT RESULT"
+  }, {
+    "description" : "Register Movement Switch Out",
+    "applicationName" : "REGISTER POSITION - RESULT",
+    "tableName" : "REGISTER POSITION - RESULT",
+    "fvFieldsTableObjectList" : [ {
+      "fieldName" : "Quantity unsettled",
+      "expectedValue" : "900"
+    }, {
+      "fieldName" : "Total quantity",
+      "expectedValue" : "700"
+    }, {
+      "fieldName" : "Share class",
+      "expectedValue" : "A"
+    }, {
+      "fieldName" : "Fund ID",
+      "expectedValue" : "G1ATAF"
+    } ],
+    "fvId" : "GI180010047-041*REGISTER POSITION - SWITCH OUT RESULT"
+  }, {
+    "description" : "Cash Log file after deal Confirmation",
+    "applicationName" : "CASH LOG FILE - RESULT",
+    "tableName" : "CASH LOG FILE - RESULT",
+    "fvFieldsTableObjectList" : [ {
+      "fieldName" : "Log type",
+      "expectedValue" : "01"
+    }, {
+      "fieldName" : "System",
+      "expectedValue" : "10"
+    }, {
+      "fieldName" : "Deal",
+      "expectedValue" : "231"
+    } ],
+    "fvId" : "GI180010047-036*CASH LOG FILE - SWITCH IN RESULT"
+  }, {
+    "description" : "Register Movement switch In",
+    "applicationName" : "REGISTER MOVEMENTS - RESULT",
+    "tableName" : "REGISTER MOVEMENTS - RESULT",
+    "fvFieldsTableObjectList" : [ {
+      "fieldName" : "Value  date",
+      "expectedValue" : "05-Jan-2018"
+    }, {
+      "fieldName" : "Net amount",
+      "expectedValue" : "1851.85"
+    }, {
+      "fieldName" : "Quantity",
+      "expectedValue" : "166.666"
+    }, {
+      "fieldName" : "Share class",
+      "expectedValue" : "A"
+    } ],
+    "fvId" : "GI180010047-042*REGISTER MOVEMENTS - SWITCH IN RESULT"
+  }, {
+    "description" : "Cash Log File after Confirmation Switch In",
+    "applicationName" : "CASH LOG FILE - RESULT",
+    "tableName" : "CASH LOG FILE - RESULT",
+    "fvFieldsTableObjectList" : [ {
+      "fieldName" : "Log type",
+      "expectedValue" : "03"
+    }, {
+      "fieldName" : "System",
+      "expectedValue" : "20"
+    }, {
+      "fieldName" : "Deal",
+      "expectedValue" : "20"
+    }, {
+      "fieldName" : "Exchange rate",
+      "expectedValue" : "1"
+    }, {
+      "fieldName" : "Contract quantity",
+      "expectedValue" : "166.666"
+    }, {
+      "fieldName" : "NAV price",
+      "expectedValue" : "10"
+    }, {
+      "fieldName" : "Oper. order",
+      "expectedValue" : "0007"
+    }, {
+      "fieldName" : "Gross amount in quotation ccy.",
+      "expectedValue" : "1666.66"
+    }, {
+      "fieldName" : "Gross amount in reference ccy.",
+      "expectedValue" : "1666.66"
+    }, {
+      "fieldName" : "Net amount in quotation ccy.",
+      "expectedValue" : "1851.85"
+    }, {
+      "fieldName" : "Net amount in reference ccy.",
+      "expectedValue" : "1851.85"
+    } ],
+    "fvId" : "GI180010047-042*CASH LOG FILE - Switch In RESULT"
+  }, {
+    "description" : "Contract Summery Switch IN",
+    "applicationName" : "REGISTER CONTRACTS SUMMARY - RESULT",
+    "tableName" : "REGISTER CONTRACTS SUMMARY - RESULT",
+    "fvFieldsTableObjectList" : [ {
+      "fieldName" : "Payment amount ccy",
+      "expectedValue" : "EUR"
+    }, {
+      "fieldName" : "Amount",
+      "expectedValue" : "1666.66"
+    }, {
+      "fieldName" : "Quantity",
+      "expectedValue" : "166.666"
+    }, {
+      "fieldName" : "Status",
+      "expectedValue" : "20"
+    }, {
+      "fieldName" : "Total commission",
+      "expectedValue" : "185.19"
+    }, {
+      "fieldName" : "Operation date",
+      "expectedValue" : "02-Jan-2018"
+    }, {
+      "fieldName" : "Share price",
+      "expectedValue" : "10"
+    }, {
+      "fieldName" : "Value date",
+      "expectedValue" : "05-Jan-2018"
+    } ],
+    "fvId" : "GI180010047-042*REGISTER CONTRACTS SUMMARY - SWITCH IN RESULT"
+  }, {
+    "description" : "Register Movement Switch IN",
+    "applicationName" : "REGISTER POSITION - RESULT",
+    "tableName" : "REGISTER POSITION - RESULT",
+    "fvFieldsTableObjectList" : [ {
+      "fieldName" : "Total quantity",
+      "expectedValue" : "166.666"
+    }, {
+      "fieldName" : "Share class",
+      "expectedValue" : "A"
+    }, {
+      "fieldName" : "Fund ID",
+      "expectedValue" : "G1ATA1"
+    } ],
+    "fvId" : "GI180010047-042*REGISTER POSITION - SWITCH IN RESULT"
+  } ],
+  "rfObjectList" : [ {
+    "rfId" : "GI180010047",
+    "description" : "Commission log validation",
+    "fvLinkDetailsObjectList" : [ {
+      "scriptId" : "GI180010047-036",
+      "fvId" : "GI180010047-036*ORDER OUT",
+      "tableName" : "ORDER",
+      "fieldDetails" : "ExternalOrderNumber#G1AORDSGX01|Fund ID#G1ATAF",
+      "application" : "ORDER"
+    }, {
+      "scriptId" : "GI180010047-036",
+      "fvId" : "GI180010047-036*ORDER IN",
+      "tableName" : "ORDER",
+      "fieldDetails" : "ExternalOrderNumber#G1AORDSGX01|Fund ID#G1ATA1",
+      "application" : "ORDER"
+    }, {
+      "scriptId" : "GI180010047-036",
+      "fvId" : "GI180010047-036*CASH LOG FILE - SWITCH OUT RESULT",
+      "tableName" : "CASH LOG FILE - RESULT",
+      "fieldDetails" : "Log type#01|Fund ID#G1ATAF|Oper. order#0007",
+      "application" : "CASH LOG FILE - RESULT"
+    }, {
+      "scriptId" : "GI180010047-036",
+      "fvId" : "GI180010047-036*CASH LOG FILE - SWITCH IN RESULT",
+      "tableName" : "CASH LOG FILE - RESULT",
+      "fieldDetails" : "Log type#01|Fund ID#G1ATAF|Oper. order#0007",
+      "application" : "CASH LOG FILE - RESULT"
+    }, {
+      "scriptId" : "GI180010047-041",
+      "fvId" : "GI180010047-041*REGISTER CONTRACTS SUMMARY - SWITCH OUT RESULT",
+      "tableName" : "REGISTER CONTRACTS SUMMARY - RESULT",
+      "fieldDetails" : "Fund ID#G1ATAF|Share#A|Operation#0003",
+      "application" : "REGISTER CONTRACTS SUMMARY - RESULT"
+    }, {
+      "scriptId" : "GI180010047-042",
+      "fvId" : "GI180010047-042*REGISTER CONTRACTS SUMMARY - SWITCH IN RESULT",
+      "tableName" : "REGISTER CONTRACTS SUMMARY - RESULT",
+      "fieldDetails" : "Fund ID#G1ATA1|Share#A|Operation#0004",
+      "application" : "REGISTER CONTRACTS SUMMARY - RESULT"
+    }, {
+      "scriptId" : "GI180010047-039",
+      "fvId" : "GI180010047-039*SIMULATION HISTORICAL FILE - SWITCH OUT RESULT",
+      "tableName" : "SIMULATION HISTORICAL FILE - RESULT",
+      "fieldDetails" : "Group MF#G1A|Fund TA#G1ATAF|Oper. order#0007",
+      "application" : "SIMULATION HISTORICAL FILE - RESULT"
+    }, {
+      "scriptId" : "GI180010047-039",
+      "fvId" : "GI180010047-039*SIMULATION HISTORICAL FILE - SWITCH IN RESULT",
+      "tableName" : "SIMULATION HISTORICAL FILE - RESULT",
+      "fieldDetails" : "Group MF#G1A|Fund TA#G1ATA1",
+      "application" : "SIMULATION HISTORICAL FILE - RESULT"
+    }, {
+      "scriptId" : "GI180010047-042",
+      "fvId" : "GI180010047-042*REGISTER MOVEMENTS - SWITCH IN RESULT",
+      "tableName" : "REGISTER MOVEMENTS - RESULT",
+      "fieldDetails" : "Fund ID#G1ATA1|Share class#A|Operation code#0004",
+      "application" : "REGISTER MOVEMENTS - RESULT"
+    }, {
+      "scriptId" : "GI180010047-041",
+      "fvId" : "GI180010047-041*REGISTER MOVEMENTS - SWITCH OUT RESULT",
+      "tableName" : "REGISTER MOVEMENTS - RESULT",
+      "fieldDetails" : "Fund ID#G1ATAF|Share class#A|Operation code#0003",
+      "application" : "REGISTER MOVEMENTS - RESULT"
+    }, {
+      "scriptId" : "GI180010047-041",
+      "fvId" : "GI180010047-041*CASH LOG FILE - Switch Out RESULT",
+      "tableName" : "CASH LOG FILE - RESULT",
+      "fieldDetails" : "Log type#03|Fund ID#G1ATAF|Oper. order#0007",
+      "application" : "CASH LOG FILE - RESULT"
+    }, {
+      "scriptId" : "GI180010047-042",
+      "fvId" : "GI180010047-042*CASH LOG FILE - Switch In RESULT",
+      "tableName" : "CASH LOG FILE - RESULT",
+      "fieldDetails" : "Log type#03|Fund ID#G1ATA1",
+      "application" : "CASH LOG FILE - RESULT"
+    }, {
+      "scriptId" : "GI180010047-041",
+      "fvId" : "GI180010047-041*REGISTER POSITION - SWITCH OUT RESULT",
+      "tableName" : "REGISTER POSITION - RESULT",
+      "fieldDetails" : "Fund ID#G1ATAF|Share class#A",
+      "application" : "REGISTER POSITION - RESULT"
+    }, {
+      "scriptId" : "GI180010047-042",
+      "fvId" : "GI180010047-042*REGISTER POSITION - SWITCH IN RESULT",
+      "tableName" : "REGISTER POSITION - RESULT",
+      "fieldDetails" : "Fund ID#G1ATA1|Share class#A",
+      "application" : "REGISTER POSITION - RESULT"
+    } ]
+  } ],
+  "ssaObject" : {
+    "scenarioId" : "GI180010047",
+    "description" : "To Create commision at group level and force commisison at order level for operation codeSwitch out",
+    "themes" : "Dealing",
+    "features" : "Transaction Creation",
+    "procedures" : "Control"
+  }
+}
